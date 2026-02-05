@@ -1,0 +1,12 @@
+services:
+  nvim:
+    build: .
+    image: nvim-rust-alpine
+    container_name: nvim-rust
+    hostname: rust_dev_container
+    volumes:
+      - ./workspace:/workspace
+    #     - ./init.lua:/root/.config/nvim/init.lua
+    stdin_open: true
+    tty: true
+    command: /bin/sh -c "while sleep 1000; do :; done"

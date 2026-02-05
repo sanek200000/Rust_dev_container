@@ -1,0 +1,20 @@
+# Rust
+target/
+**/target/
+
+# Git
+.git
+.gitignore
+
+# Neovim
+.nvim/
+.nvimlog
+
+# OS / Editor
+.DS_Store
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+
